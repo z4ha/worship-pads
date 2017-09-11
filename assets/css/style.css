@@ -12,11 +12,14 @@ body{
 .pad{
   border: 1px solid #383530;
   border-radius: 5%;
-  background-color: #f7f4ed;
+  background: #f7f4ed;
   /* width: 80px; */
   height: 100px;
   line-height: 100px;
   text-align: center;
+}
+.highlight{
+  background: pink;
 }
 .top{
   background: black;
