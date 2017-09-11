@@ -3,10 +3,11 @@ var sound = new Howl({
 });
 
 $('.c').click(function() {
-  if (sound.playing()) {
+  if (sound.playing() && sound.volume() === 1) {
     sound.fade(1.0, 0, 1000);
     setTimeout(function() { sound.stop()}, 1000);
-  } else {
+  } 
+  if (sound.playing() == false) {
     sound.play();
   }
 });
